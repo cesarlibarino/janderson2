@@ -6,7 +6,7 @@
   <title>Janderson Pinheiro | Consultoria Nutricional Avançada</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <script>
     tailwind.config = {
       theme: {
@@ -14,10 +14,10 @@
           fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
           colors: {
             janderson: {
-              bg: '#070c10',
-              card: '#0f1720',
-              brand: '#10b981', 
-              brandHover: '#059669',
+              bg: '#040a14',      /* Azul Escuro Premium Atualizado */
+              card: '#0b1524',    /* Azul Noturno para os Cards */
+              brand: '#38bdf8',   /* Azul Ciano de Destaque */
+              brandHover: '#0ea5e9',
               muted: '#9ca3af'
             }
           }
@@ -32,10 +32,14 @@
 </head>
 <body class="bg-janderson-bg text-white font-sans antialiased selection:bg-janderson-brand selection:text-white">
 
+  <!-- HEADER -->
   <header class="fixed top-0 w-full z-50 bg-janderson-bg/90 backdrop-blur-md border-b border-gray-800/60">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 h-24 flex items-center justify-between">
-      <div class="text-xl sm:text-2xl font-extrabold uppercase tracking-tight">
-        Janderson Pinheiro <span class="text-janderson-brand text-xs sm:text-sm block font-semibold tracking-wider normal-case">Consultoria Nutricional Avançada</span>
+      <div class="flex items-center gap-3 sm:gap-4">
+        <img src="logo 1.png" alt="Logo Janderson Pinheiro" class="h-12 sm:h-16 w-auto object-contain" />
+        <div class="text-xl sm:text-2xl font-extrabold uppercase tracking-tight">
+          Janderson Pinheiro <span class="text-janderson-brand text-xs sm:text-sm block font-semibold tracking-wider normal-case">Consultoria Nutricional Avançada</span>
+        </div>
       </div>
       <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="bg-janderson-brand hover:bg-janderson-brandHover text-white text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded transition-all duration-300 transform hover:scale-105 active:scale-95">
         Vagas Limitadas
@@ -43,6 +47,7 @@
     </div>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="pt-48 pb-32 px-6 max-w-7xl mx-auto text-center min-h-screen flex flex-col justify-center items-center">
     <div class="reveal active w-full max-w-5xl">
       <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-8 animate-pulse">
@@ -74,14 +79,15 @@
     </div>
   </section>
 
-  <section class="py-32 px-6 bg-[#0a1117] border-y border-gray-900">
+  <!-- PROBLEM SECTION -->
+  <section class="py-32 px-6 bg-[#060e1a] border-y border-gray-900">
     <div class="max-w-6xl mx-auto text-center">
       <div class="reveal max-w-3xl mx-auto mb-20">
         <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight mb-6">
           Por que você treina pesado e <span class="text-red-500">não muda a estética?</span>
         </h2>
         <p class="text-gray-400 text-lg">
-          O erro da maioria das pessoas não está na intensidade do treino, mas sim na forma cega como alimentam o corpo. Se você se identifica com algum ponto abaixo, você está errando na estratégia.
+          O erro da maioria das pessoas não está na intensidade do treino, mas sim na forma cega como alimentam o corpo. Se você se identifica com algum point abaixo, você está errando na estratégia.
         </p>
       </div>
 
@@ -107,12 +113,13 @@
             <i data-lucide="eye-off" class="w-6 h-6"></i>
           </div>
           <h3 class="text-xl font-bold uppercase mb-4 text-gray-100">Músculos Escondidos</h3>
-          <p class="text-gray-400 leading-relaxed">Você constrói massa muscular na academia com consistência, mas ela fica totalmente oculta atrás de uma camada persistente de gordura abdominal.</p>
+          <p class="text-gray-400 leading-relaxed">Você constrói massa muscular na academia com consistência, mas ela fica totalmente oculta atrás de uma camada permanente de gordura abdominal.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- METHODOLOGY SECTION -->
   <section class="py-32 px-6 max-w-6xl mx-auto">
     <div class="text-center mb-20">
       <div class="reveal max-w-3xl mx-auto">
@@ -171,7 +178,48 @@
     </div>
   </section>
 
-  <section class="py-32 px-6 bg-gradient-to-b from-[#0a1117] to-janderson-bg text-center border-t border-gray-900">
+  <!-- SEÇÃO DEPOIMENTOS (MENSAGENS DO WHATSAPP) -->
+  <section class="py-24 px-6 max-w-6xl mx-auto text-center reveal">
+    <div class="w-full">
+      <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tighter mb-12 max-w-3xl mx-auto leading-tight">
+        Quem ativou o protocolo manda <span class="text-janderson-brand">esses resultados no WhatsApp:</span>
+      </h2>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <img src="dep1.webp" alt="Depoimento 1" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+        <img src="dep2.webp" alt="Depoimento 2" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+        <img src="dep3.webp" alt="Depoimento 3" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+        <img src="dep4.webp" alt="Depoimento 4" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO EVOLUÇÕES (ANTES E DEPOIS DE ALUNOS) -->
+  <section class="py-24 px-6 bg-gradient-to-b from-[#060e1a] to-janderson-bg text-center border-t border-gray-900">
+    <div class="max-w-6xl mx-auto text-center reveal">
+      
+      <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
+        Evoluções Reais
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tighter mb-16">
+        Resultados de Alunos da Consultoria
+      </h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-20">
+        <img src="1.webp" alt="Resultado 1" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="2.webp" alt="Resultado 2" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="3.webp" alt="Resultado 3" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="4.webp" alt="Resultado 4" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="5.webp" alt="Resultado 5" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="6.webp" alt="Resultado 6" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="7.webp" alt="Resultado 7" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="8.webp" alt="Resultado 8" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING / CTA SECTION -->
+  <section class="py-32 px-6 bg-gradient-to-b from-transparent to-janderson-bg text-center border-t border-gray-900">
     <div class="reveal max-w-4xl mx-auto">
       <h2 class="text-4xl sm:text-6xl font-extrabold uppercase tracking-tighter mb-6">
         Chega de adiar o seu <span class="text-janderson-brand">resultado estético</span>
@@ -189,6 +237,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="py-8 text-center text-xs text-gray-600 border-t border-gray-900/60">
     &copy; 2026 Janderson Pinheiro. Todos os direitos reservados.
   </footer>
