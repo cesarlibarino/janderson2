@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Janderson Pinheiro | Consultoria Nutricional</title>
+  <title>Agência Digital | Cesar Libarino</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
           colors: {
-            janderson: {
-              bg: '#0b131a',
-              card: '#111c24',
-              brand: '#10b981', /* Verde Esmeralda Premium */
-              brandHover: '#059669'
+            agency: {
+              bg: '#030303',
+              card: '#ffffff',
+              cardMuted: '#f9fafb',
+              textPrimary: '#0f172a',
+              textSecondary: '#475569',
+              accent: '#2563eb',
+              accentHover: '#1d4ed8'
             }
           }
         }
@@ -25,138 +28,325 @@
     }
   </script>
   <style>
-    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
-    .reveal.active { opacity: 1; transform: translateY(0); }
+    .glow-bg {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 1400px;
+      height: 600px;
+      background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.12) 0%, rgba(37, 99, 235, 0) 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
   </style>
 </head>
-<body class="bg-janderson-bg text-white font-sans antialiased selection:bg-janderson-brand selection:text-white">
+<body class="bg-agency-bg text-slate-300 font-sans antialiased relative selection:bg-blue-500 selection:text-white">
 
-  <!-- HEADER -->
-  <header class="fixed top-0 w-full z-50 bg-janderson-bg/90 backdrop-blur-md border-b border-gray-800/60">
-    <div class="max-w-7xl mx-auto px-6 sm:px-12 h-24 flex items-center justify-between">
-      <div class="text-xl sm:text-2xl font-extrabold uppercase tracking-tight">
-        Janderson Pinheiro <span class="text-janderson-brand text-xs sm:text-sm block font-semibold tracking-wider normal-case">Consultoria Nutricional Advanced</span>
+  <!-- Efeito de Luz de Fundo -->
+  <div class="glow-bg"></div>
+
+  <!-- NAVBAR PREMIUM -->
+  <nav class="border-b border-slate-900 bg-agency-bg/80 backdrop-blur-md sticky top-0 z-50 transition-all">
+    <div class="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-bold text-white text-sm">
+          CL
+        </div>
+        <span class="text-white font-bold tracking-tight text-sm uppercase">Cesar Libarino</span>
       </div>
-      <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="bg-janderson-brand hover:bg-janderson-brandHover text-white text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded transition-all duration-300 transform hover:scale-105 active:scale-95">
-        Vagas Limitadas
+      <a href="https://calendar.app.google/znE1EU63FpjsWEvT7" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 text-white hover:bg-slate-800 px-4 py-2 rounded-xl font-medium text-xs tracking-wide uppercase transition-all">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        Consultoria Livre
       </a>
     </div>
-  </header>
+  </nav>
 
   <!-- HERO SECTION -->
-  <section class="pt-48 pb-24 px-6 max-w-6xl mx-auto text-center min-h-[95vh] flex flex-col justify-center items-center">
-    <div class="reveal active w-full max-w-4xl">
-      <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-8 animate-pulse">
-        Destrave sua Definição Muscular
-      </span>
-      
-      <h1 class="text-4xl sm:text-7xl font-extrabold uppercase tracking-tighter leading-tight sm:leading-none mb-8">
-        Seu shape já está aí. Só está <span class="text-janderson-brand block sm:inline">escondido embaixo da gordura.</span>
-      </h1>
-      
-      <p class="text-gray-400 text-lg sm:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-        Chega de fazer dietas restritivas que destroem a sua masa muscular. Descubra a estratégia nutricional certa para <strong class="text-gray-200 font-semibold">eliminar a capa de gordura</strong> e revelar a definição que o seu treino já construiu.
-      </p>
-      
-      <div class="mb-16">
-        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-white font-bold uppercase text-sm sm:text-base tracking-widest px-10 py-5 rounded-md shadow-2xl shadow-janderson-brand/30 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/40">
-          <i data-lucide="apple" class="w-6 h-6"></i> Destravar Meu Shape Agora
-        </a>
+  <header class="max-w-5xl mx-auto px-6 pt-24 pb-20 relative z-10 text-center md:text-left">
+    <span class="inline-flex items-center gap-1.5 bg-blue-500/10 text-blue-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-5 border border-blue-500/20 uppercase tracking-wider">
+      <i data-lucide="zap" class="w-3.5 h-3.5"></i> Estratégia & Conversão Digital
+    </span>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-[1.15] max-w-4xl">
+      Agência de Estratégia para <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-400">Experts e Profissionais Liberais</span>
+    </h1>
+    <p class="text-base md:text-lg text-slate-400 max-w-2xl leading-relaxed">
+      Do zero ao funil completo — desenvolvemos suas páginas profissionais, tráfego pago de alta intenção e a estruturação do seu produto digital do roteiro à venda.
+    </p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 space-y-24 pb-32 relative z-10">
+
+    <!-- SITES E PÁGINAS DE CAPTAÇÃO -->
+    <section>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-px bg-gradient-to-r from-blue-500/50 to-transparent w-12"></div>
+        <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase">01. Sites e Páginas de Captação</h2>
       </div>
-
-      <div class="relative inline-block">
-        <div class="absolute inset-0 bg-janderson-brand/10 rounded-full blur-2xl pointer-events-none"></div>
-        <img 
-          src="janderson-pinheiro.webp" 
-          alt="Janderson Pinheiro - Nutricionista" 
-          class="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-janderson-brand/30 shadow-2xl shadow-janderson-brand/20 transition-transform duration-500 hover:scale-105"
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- SEÇÃO DEPOIMENTOS (PRINTS) -->
-  <section class="py-24 px-6 max-w-6xl mx-auto text-center reveal">
-    <div class="w-full">
-      <!-- Grid de 4 prints de depoimentos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        <img src="dep1.webp" alt="Depoimento 1" class="w-full rounded-xl border border-gray-800/80 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-        <img src="dep2.webp" alt="Depoimento 2" class="w-full rounded-xl border border-gray-800/80 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-        <img src="dep3.webp" alt="Depoimento 3" class="w-full rounded-xl border border-gray-800/80 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-        <img src="dep4.webp" alt="Depoimento 4" class="w-full rounded-xl border border-gray-800/80 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-      </div>
-
-      <!-- Headline: Chega de Adiar -->
-      <h2 class="text-4xl sm:text-6xl font-extrabold uppercase tracking-tighter leading-tight max-w-3xl mx-auto">
-        Chega de adiar o corpo e a <span class="text-janderson-brand">saúde que você merece.</span>
-      </h2>
-      <p class="text-gray-400 text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
-        Abaixo estão os resultados de quem parou de dar desculpas e tomou a atitude de transformar o próprio shape com o método correto.
-      </p>
-    </div>
-  </section>
-
-  <!-- SEÇÃO ANTES E DEPOIS (ÚLTIMA DOBRA) -->
-  <section class="py-24 px-6 bg-gradient-to-b from-transparent to-black/30 border-t border-gray-900">
-    <div class="max-w-6xl mx-auto text-center reveal">
       
-      <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
-        Evoluções Reais
-      </span>
-      <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tighter mb-16">
-        Resultados de Alunos da Consultoria
-      </h2>
-
-      <!-- Grid de Fotos do 1 ao 8 -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-20">
-        <img src="1.webp" alt="Resultado 1" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="2.webp" alt="Resultado 2" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="3.webp" alt="Resultado 3" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="4.webp" alt="Resultado 4" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="5.webp" alt="Resultado 5" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="6.webp" alt="Resultado 6" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="7.webp" alt="Resultado 7" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-        <img src="8.webp" alt="Resultado 8" class="w-full aspect-[3/4] object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/20"/>
-      </div>
-
-      <!-- DOBRA FINAL DE CONVERSÃO -->
-      <div class="bg-janderson-card/40 border border-gray-800/80 rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-janderson-brand/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <h3 class="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight mb-4">
-          Pronto para ser o próximo resultado?
-        </h3>
-        <p class="text-gray-400 text-sm sm:text-base mb-8 max-w-xl mx-auto">
-          As vagas são extremamente restritas para garantir o acompanhamento individualizado de cada protocolo.
+        <!-- Pacote Essencial -->
+        <div class="bg-agency-card rounded-2xl p-8 border border-slate-200 shadow-sm flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+          <div class="flex items-center justify-between mb-6">
+            <div class="w-12 h-12 rounded-xl bg-slate-50 text-agency-textPrimary flex items-center justify-center border border-slate-100 transition-colors group-hover:bg-blue-50 group-hover:text-blue-600">
+              <i data-lucide="layout" class="w-5 h-5"></i>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-2.5 py-1 rounded-md">Início Rápido</span>
+          </div>
+          
+          <h3 class="text-2xl font-bold text-agency-textPrimary mb-2">Pacote Essencial</h3>
+          <p class="text-agency-textSecondary text-sm mb-6 leading-relaxed">Ideal para quem já possui domínio e hospedagem contratados e busca execução ágil.</p>
+          
+          <div class="mb-8 border-t border-b border-slate-100 py-4 flex items-baseline gap-1">
+            <span class="text-sm font-medium text-slate-400">R$</span>
+            <span class="text-4xl font-extrabold text-agency-textPrimary tracking-tight">150</span>
+            <span class="text-sm font-semibold text-agency-textSecondary">,00</span>
+            <span class="text-xs text-slate-400 ml-2">/ Taxa única</span>
+          </div>
+
+          <ul class="space-y-4 flex-1 mb-2">
+            <li class="flex items-start gap-3 text-sm text-agency-textSecondary">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+              <span>Página configurada e idêntica à prévia</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm text-agency-textSecondary">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+              <span>Instalação limpa no domínio do cliente</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm text-agency-textSecondary">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+              <span>Entrega e homologação pronta para uso</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400 italic">
+              <i data-lucide="alert-circle" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+              <span>Hospedagem por conta do cliente / sem alterações pós-entrega</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pacote Profissional -->
+        <div class="bg-agency-card rounded-2xl p-8 border border-blue-100 shadow-md relative flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ring-4 ring-blue-500/5 group">
+          <div class="absolute top-6 right-6">
+            <span class="bg-blue-600 text-white text-[10px] font-extrabold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm">
+              Mais Solicitado
+            </span>
+          </div>
+          
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+              <i data-lucide="globe" class="w-5 h-5"></i>
+            </div>
+          </div>
+          
+          <h3 class="text-2xl font-bold text-agency-textPrimary mb-2">Pacote Profissional</h3>
+          <p class="text-agency-textSecondary text-sm mb-6 leading-relaxed">Infraestrutura completa. Cuidamos de toda a barreira técnica para você focar no negócio.</p>
+          
+          <div class="mb-8 border-t border-b border-slate-100 py-4 flex items-baseline gap-1">
+            <span class="text-sm font-medium text-slate-400">R$</span>
+            <span class="text-4xl font-extrabold text-agency-textPrimary tracking-tight">250</span>
+            <span class="text-sm font-semibold text-agency-textSecondary">,00</span>
+            <span class="text-xs text-slate-400 ml-2">/ Anual</span>
+          </div>
+
+          <ul class="space-y-4 flex-1 mb-2">
+            <li class="flex items-start gap-3 text-sm text-agency-textSecondary">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <span>Página configurada conforme prévia</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm text-agency-textSecondary">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <span>Instalação e otimização em servidor Premium</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm font-semibold text-agency-textPrimary">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+              <span>1 Ano de Hospedagem Inclusa</span>
+            </li>
+            <li class="flex items-start gap-3 text-sm text-agency-textSecondary">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-600 mt-0.5 shrink-0"></i>
+              <span>Garantia de alterações de texto/fotos por 30 dias</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GESTÃO DE TRÁFEGO PAGO -->
+    <section>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-px bg-gradient-to-r from-blue-500/50 to-transparent w-12"></div>
+        <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase">02. Gestão de Tráfego Pago</h2>
+      </div>
+      
+      <div class="bg-agency-card rounded-2xl p-8 md:p-12 border border-slate-200 shadow-sm transition-all duration-300 hover:shadow-xl">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8 pb-6 border-b border-slate-100">
+          <div class="flex items-center gap-4 text-agency-textPrimary">
+            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center border border-indigo-100">
+              <i data-lucide="trending-up" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold tracking-tight">Meta Ads Comercial</h3>
+              <p class="text-xs text-slate-400 font-medium">Instagram & Facebook Ads direcionados</p>
+            </div>
+          </div>
+          <span class="self-start md:self-center bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1.5 rounded-lg border border-indigo-100 uppercase tracking-wider">
+            Foco em Conversão Local
+          </span>
+        </div>
+        
+        <p class="text-agency-textSecondary text-sm md:text-base leading-relaxed mb-8 max-w-3xl">
+          Atração qualificada de leads prontos para fechar negócio. Dominamos desde o mapeamento estratégico da oferta local, passando pela criação dos criativos de alta conversão, até o tracking inteligente e o alinhamento de scripts de recepção no WhatsApp.
         </p>
 
-        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-white font-bold uppercase text-sm sm:text-base tracking-widest px-12 py-5 rounded-md shadow-2xl shadow-janderson-brand/30 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/50 active:scale-95">
-          <i data-lucide="check-circle" class="w-5 h-5"></i> Garanta Sua Vaga
-        </a>
-      </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 text-sm text-agency-textSecondary">
+              <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+              <span>Análise profunda de público e esteira de oferta</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-agency-textSecondary">
+              <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+              <span>Desenho de abordagem estratégica no WhatsApp</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-agency-textSecondary">
+              <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+              <span>Desenvolvimento de até 4 novos criativos semanais</span>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 text-sm text-agency-textSecondary">
+              <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+              <span>Otimização diária de orçamentos e campanhas</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm text-agency-textSecondary">
+              <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+              <span>Configuração avançada de Pixel e API de Conversão</span>
+            </div>
+          </div>
+        </div>
 
-    </div>
-  </section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+          <div class="bg-agency-cardMuted rounded-xl p-6 border border-slate-100 hover:border-slate-300 transition-colors">
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Fee Mensal</span>
+            <span class="text-3xl font-extrabold text-agency-textPrimary tracking-tight">R$ 800<span class="text-sm font-normal text-slate-400 tracking-normal"> /mês</span></span>
+          </div>
+          <div class="bg-agency-cardMuted rounded-xl p-6 border border-slate-100 hover:border-slate-300 transition-colors">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-widest block">Fee Trimestral</span>
+              <span class="text-[9px] bg-indigo-100 text-indigo-700 font-bold px-2 py-0.5 rounded">Desconto</span>
+            </div>
+            <span class="text-3xl font-extrabold text-agency-textPrimary tracking-tight block">R$ 2.000</span>
+            <span class="text-xs text-slate-400">À vista ou parcelado em cartão de crédito</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRIAÇÃO DE INFOPRODUTO REESTRUTURADA -->
+    <section>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-px bg-gradient-to-r from-blue-500/50 to-transparent w-12"></div>
+        <h2 class="text-xs font-bold tracking-widest text-slate-500 uppercase">03. Criação de Infoproduto</h2>
+      </div>
+      
+      <div class="bg-agency-card rounded-2xl p-8 md:p-12 border border-slate-200 shadow-sm relative overflow-hidden transition-all duration-300 hover:shadow-xl">
+        <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-blue-600 to-indigo-500"></div>
+        
+        <div class="flex items-center gap-4 text-agency-textPrimary mb-6">
+          <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-100 text-xl font-bold">
+            🎓
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold tracking-tight">Infoproduto Completo</h3>
+            <p class="text-xs text-slate-400 font-medium">Para quem quer lançar um curso ou produto digital</p>
+          </div>
+        </div>
+        
+        <p class="text-agency-textSecondary text-sm md:text-base leading-relaxed mb-8 max-w-3xl">
+          Minha equipe cuida de tudo: <strong>roteiro, edição, publicação na plataforma (Hotmart, Kiwify), página de vendas e funil de e-mail</strong>. Você aparece, grava e entrega o seu conhecimento — a gente transforma em produto e monta a estrutura para vender.
+        </p>
+
+        <!-- Tags Resumo do Escopo -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-10">
+          <div class="bg-agency-cardMuted border border-slate-100 rounded-xl p-3 text-center">
+            <i data-lucide="file-text" class="w-4 h-4 text-blue-600 mx-auto mb-1.5"></i>
+            <span class="text-xs font-semibold text-agency-textPrimary block">Roteiro</span>
+          </div>
+          <div class="bg-agency-cardMuted border border-slate-100 rounded-xl p-3 text-center">
+            <i data-lucide="video" class="w-4 h-4 text-blue-600 mx-auto mb-1.5"></i>
+            <span class="text-xs font-semibold text-agency-textPrimary block">Edição</span>
+          </div>
+          <div class="bg-agency-cardMuted border border-slate-100 rounded-xl p-3 text-center">
+            <i data-lucide="upload-cloud" class="w-4 h-4 text-blue-600 mx-auto mb-1.5"></i>
+            <span class="text-xs font-semibold text-agency-textPrimary block">Plataformas</span>
+          </div>
+          <div class="bg-agency-cardMuted border border-slate-100 rounded-xl p-3 text-center">
+            <i data-lucide="layout" class="w-4 h-4 text-blue-600 mx-auto mb-1.5"></i>
+            <span class="text-xs font-semibold text-agency-textPrimary block">Página de Vendas</span>
+          </div>
+          <div class="bg-agency-cardMuted border border-slate-100 rounded-xl p-3 text-center col-span-2 sm:col-span-1">
+            <i data-lucide="mail" class="w-4 h-4 text-blue-600 mx-auto mb-1.5"></i>
+            <span class="text-xs font-semibold text-agency-textPrimary block">Funil de E-mail</span>
+          </div>
+        </div>
+
+        <div class="bg-blue-50/50 rounded-xl p-5 border border-blue-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <i data-lucide="help-circle" class="w-5 h-5 text-blue-600 shrink-0"></i>
+            <p class="text-xs text-agency-textSecondary font-medium leading-relaxed">
+              O investimento varia conforme o escopo do projeto. A gente conversa em uma reunião rápida para entender o que faz sentido para o seu caso.
+            </p>
+          </div>
+          <a href="https://calendar.app.google/znE1EU63FpjsWEvT7" target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 shrink-0 inline-flex items-center gap-1 whitespace-nowrap">
+            Agendar conversa <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE O ESTRATEGISTA -->
+    <section class="border-t border-slate-900 pt-20 relative">
+      <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-agency-bg px-4 text-slate-800 text-sm font-mono">// STRATEGIST PROFILE</div>
+      
+      <div class="flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto">
+        <div class="relative shrink-0">
+          <div class="absolute inset-0 bg-blue-600 rounded-3xl blur-md opacity-20 scale-95 transition-transform duration-500 group-hover:scale-105"></div>
+          <img 
+            src="photo_2026-02-19_20-08-11.jpg" 
+            alt="Cesar Libarino" 
+            class="w-52 h-52 md:w-60 md:h-60 object-cover rounded-3xl relative z-10 border border-slate-800 shadow-2xl"
+          />
+        </div>
+        
+        <div class="flex-1 text-center md:text-left">
+          <span class="text-xs font-bold tracking-widest text-blue-500 uppercase block mb-1">Nos Bastidores</span>
+          <h2 class="text-3xl font-extrabold text-white mb-2 tracking-tight">Cesar Libarino</h2>
+          <p class="text-slate-500 text-xs font-medium mb-6">Estrategista Digital & Especialista em Funis de Conversão</p>
+          
+          <p class="text-slate-400 text-sm leading-relaxed mb-8 max-w-xl">
+            Atuo diretamente no desenvolvimento e otimização de funis de vendas de resposta direta, infraestrutura técnica para infoprodutos e gestão profissional de tráfego pago. Minha missão é construir ecossistemas previsíveis que convertem cliques em faturamento real para prestadores de serviço e infoprodutores.
+          </p>
+          
+          <a href="https://calendar.app.google/znE1EU63FpjsWEvT7" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white hover:from-blue-500 hover:to-blue-400 px-7 py-3.5 rounded-xl font-bold text-sm tracking-wide shadow-lg shadow-blue-600/10 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            Agendar Reunião Estratégica
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
-  <footer class="py-8 text-center text-xs text-gray-600 border-t border-gray-900">
-    <p>&copy; 2026 Janderson Pinheiro. Todos os direitos reservados.</p>
+  <footer class="border-t border-slate-950 bg-[#020202] py-8 text-center text-xs text-slate-600">
+    <p>&copy; 2026 Cesar Libarino. Todos os direitos reservados.</p>
   </footer>
 
   <script>
+    // Ativação dos ícones dinâmicos
     lucide.createIcons();
-    
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { 
-        if(e.isIntersecting) { 
-          e.target.classList.add('active'); 
-          observer.unobserve(e.target); 
-        } 
-      });
-    }, { threshold: 0.05 });
-    
-    reveals.forEach(r => observer.observe(r));
   </script>
 </body>
 </html>
