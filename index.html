@@ -14,11 +14,10 @@
           fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
           colors: {
             janderson: {
-              bg: '#040a14',      /* Azul Escuro Profundo e Premium */
-              card: '#0b1524',    /* Azul Noturno para os Cards */
-              brand: '#38bdf8',   /* Azul Ciano / Sky da Logo */
-              brandHover: '#0ea5e9',
-              textIce: '#93c5fd'  /* Azul Gelo Claro para mesclar nos textos */
+              bg: '#040a14',      /* Azul Escuro Premium */
+              card: '#0b1524',    /* Azul Noturno para Cards */
+              brand: '#38bdf8',   /* Azul Ciano de Destaque */
+              brandHover: '#0ea5e9'
             }
           }
         }
@@ -33,18 +32,15 @@
 <body class="bg-janderson-bg text-white font-sans antialiased selection:bg-janderson-brand selection:text-white">
 
   <!-- HEADER -->
-  <header class="fixed top-0 w-full z-50 bg-janderson-bg/90 backdrop-blur-md border-b border-blue-950/40">
+  <header class="fixed top-0 w-full z-50 bg-janderson-bg/90 backdrop-blur-md border-b border-gray-800/60">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 h-24 flex items-center justify-between">
-      
-      <!-- Logo + Nome do Expert -->
       <div class="flex items-center gap-3 sm:gap-4">
-        <img src="logo 1.png" alt="Logo Janderson Pinheiro" class="h-12 sm:h-16 w-auto object-contain rounded-md" />
+        <img src="logo 1.png" alt="Logo Janderson Pinheiro" class="h-12 sm:h-16 w-auto object-contain" />
         <div class="text-xl sm:text-2xl font-extrabold uppercase tracking-tight">
           Janderson Pinheiro <span class="text-janderson-brand text-xs sm:text-sm block font-semibold tracking-wider normal-case">Consultoria Nutricional Avançada</span>
         </div>
       </div>
-
-      <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="bg-janderson-brand hover:bg-janderson-brandHover text-janderson-bg text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded transition-all duration-300 transform hover:scale-105 active:scale-95">
+      <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="bg-janderson-brand hover:bg-janderson-brandHover text-white text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded transition-all duration-300 transform hover:scale-105 active:scale-95">
         Vagas Limitadas
       </a>
     </div>
@@ -61,13 +57,13 @@
         Seu shape já está aí. Só está <span class="text-janderson-brand block sm:inline">escondido embaixo da gordura.</span>
       </h1>
       
-      <p class="text-janderson-textIce text-lg sm:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-        Chega de fazer dietas restritivas que destroem a sua massa muscular. Descubra a estratégia nutricional certa para <strong class="text-white font-semibold">eliminar a capa de gordura</strong> e revelar a definição que o seu treino já construiu.
+      <p class="text-gray-400 text-lg sm:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
+        Chega de fazer dietas restritivas que destroem a sua massa muscular. Descubra a estratégia nutricional certa para <strong class="text-gray-200 font-semibold">eliminar a capa de gordura</strong> e revelar a definição que o seu treino já construiu.
       </p>
       
       <div class="mb-16">
-        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-janderson-bg font-bold uppercase text-sm sm:text-base tracking-widest px-10 py-5 rounded-md shadow-2xl shadow-janderson-brand/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/40">
-          <i data-lucide="apple" class="w-6 h-6 fill-janderson-bg"></i> Destravar Meu Shape Agora
+        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-white font-bold uppercase text-sm sm:text-base tracking-widest px-10 py-5 rounded-md shadow-2xl shadow-janderson-brand/30 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/40">
+          <i data-lucide="apple" class="w-6 h-6"></i> Destravar Meu Shape Agora
         </a>
       </div>
 
@@ -82,38 +78,24 @@
     </div>
   </section>
 
-  <!-- SEÇÃO DEPOIMENTOS (PRINTS QUADRADOS COM HEADLINE ACIMA) -->
+  <!-- SEÇÃO DEPOIMENTOS (MENSAGENS DO WHATSAPP) -->
   <section class="py-24 px-6 max-w-6xl mx-auto text-center reveal">
     <div class="w-full">
-      
-      <!-- Headline dos Prints (Mensagens de Resultado) -->
-      <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
-        Reconhecimento e Resultados
-      </span>
       <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tighter mb-12 max-w-3xl mx-auto leading-tight">
-        Quem tem acesso à estratégia certa <span class="text-janderson-brand">manda esse tipo de mensagem:</span>
+        Quem ativou o protocolo manda <span class="text-janderson-brand">esses resultados no WhatsApp:</span>
       </h2>
 
-      <!-- Grid de 4 prints de depoimentos em formato quadrado -->
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
-        <img src="dep1.webp" alt="Depoimento 1" class="w-full aspect-square object-cover rounded-xl border border-blue-950/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-        <img src="dep2.webp" alt="Depoimento 2" class="w-full aspect-square object-cover rounded-xl border border-blue-950/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-        <img src="dep3.webp" alt="Depoimento 3" class="w-full aspect-square object-cover rounded-xl border border-blue-950/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
-        <img src="dep4.webp" alt="Depoimento 4" class="w-full aspect-square object-cover rounded-xl border border-blue-950/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03] hover:border-janderson-brand/30"/>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <img src="dep1.webp" alt="Depoimento 1" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+        <img src="dep2.webp" alt="Depoimento 2" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+        <img src="dep3.webp" alt="Depoimento 3" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
+        <img src="dep4.webp" alt="Depoimento 4" class="w-full aspect-square object-cover rounded-xl border border-gray-800/60 bg-janderson-card shadow-xl transition-all duration-300 hover:scale-[1.03]" />
       </div>
-
-      <!-- Headline de Transição Original -->
-      <h2 class="text-4xl sm:text-6xl font-extrabold uppercase tracking-tighter leading-tight max-w-3xl mx-auto">
-        Chega de adiar o corpo e a <span class="text-janderson-brand">saúde que você merece.</span>
-      </h2>
-      <p class="text-janderson-textIce text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
-        Abaixo estão os resultados visuais de quem parou de dar desculpas e tomou a atitude de transformar o próprio shape com o método correto.
-      </p>
     </div>
   </section>
 
-  <!-- SEÇÃO ANTES E DEPOIS (ÚLTIMA DOBRA - FOTOS QUADRADAS) -->
-  <section class="py-24 px-6 bg-gradient-to-b from-transparent to-black/40 border-t border-blue-950/30">
+  <!-- SEÇÃO EVOLUÇÕES (ANTES E DEPOIS DE ALUNOS) -->
+  <section class="py-24 px-6 bg-gradient-to-b from-transparent to-black/30 border-t border-gray-900">
     <div class="max-w-6xl mx-auto text-center reveal">
       
       <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-6">
@@ -123,31 +105,28 @@
         Resultados de Alunos da Consultoria
       </h2>
 
-      <!-- Grid de Fotos do 1 ao 8 em formato quadrado perfeito -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-20">
-        <img src="1.webp" alt="Resultado 1" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="2.webp" alt="Resultado 2" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="3.webp" alt="Resultado 3" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="4.webp" alt="Resultado 4" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="5.webp" alt="Resultado 5" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="6.webp" alt="Resultado 6" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="7.webp" alt="Resultado 7" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
-        <img src="8.webp" alt="Resultado 8" class="w-full aspect-square object-cover rounded-lg border border-blue-950/50 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04] hover:border-janderson-brand/30"/>
+        <img src="1.webp" alt="Resultado 1" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="2.webp" alt="Resultado 2" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="3.webp" alt="Resultado 3" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="4.webp" alt="Resultado 4" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="5.webp" alt="Resultado 5" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="6.webp" alt="Resultado 6" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="7.webp" alt="Resultado 7" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
+        <img src="8.webp" alt="Resultado 8" class="w-full aspect-square object-cover rounded-lg border border-gray-800 bg-janderson-card shadow-md transition-transform duration-300 hover:scale-[1.04]" />
       </div>
 
       <!-- DOBRA FINAL DE CONVERSÃO -->
-      <div class="bg-janderson-card/60 border border-blue-950/60 rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-janderson-brand/5 rounded-full blur-3xl pointer-events-none"></div>
-        
+      <div class="bg-janderson-card/40 border border-gray-800/80 rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
         <h3 class="text-2xl sm:text-4xl font-extrabold uppercase tracking-tight mb-4">
           Pronto para ser o próximo resultado?
         </h3>
-        <p class="text-janderson-textIce text-sm sm:text-base mb-8 max-w-xl mx-auto">
+        <p class="text-gray-400 text-sm sm:text-base mb-8 max-w-xl mx-auto">
           As vagas são extremamente restritas para garantir o acompanhamento individualizado de cada protocolo.
         </p>
 
-        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-janderson-bg font-bold uppercase text-sm sm:text-base tracking-widest px-12 py-5 rounded-md shadow-2xl shadow-janderson-brand/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/40 active:scale-95">
-          <i data-lucide="check-circle" class="w-5 h-5"></i> Garanta Sua Vaga
+        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-white font-bold uppercase text-sm sm:text-base tracking-widest px-12 py-5 rounded-md shadow-2xl shadow-janderson-brand/30 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/40 active:scale-95">
+          <i data-lucide="apple" class="w-5 h-5"></i> Garanta Sua Vaga
         </a>
       </div>
 
@@ -155,7 +134,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-8 text-center text-xs text-gray-600 border-t border-blue-950/20">
+  <footer class="py-8 text-center text-xs text-gray-600 border-t border-gray-900">
     <p>&copy; 2026 Janderson Pinheiro. Todos os direitos reservados.</p>
   </footer>
 
