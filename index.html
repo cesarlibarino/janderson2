@@ -3,255 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lucas Gomes | Consultoria Online - Hipertrofia e Emagrecimento</title>
-
+  <title>Janderson Pinheiro | Consultoria Nutricional</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'sans-serif'],
-          },
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
           colors: {
-            fitness: {
-              accent: '#2563eb', /* Azul Royal Premium */
-              accentHover: '#1d4ed8',
-              dark: '#070a13', /* Fundo Dark Premium */
-              slate: '#1e293b',
-              light: '#f8fafc'
+            janderson: {
+              bg: '#0b131a',
+              card: '#111c24',
+              brand: '#10b981', /* Verde Esmeralda Premium */
+              brandHover: '#059669'
             }
           }
         }
       }
     }
   </script>
-
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; color: #070a13; overflow-x: hidden; }
-    
-    .hero-bg {
-      background: linear-gradient(rgba(7, 10, 19, 0.90), rgba(7, 10, 19, 0.95)), 
-                  url('https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=1469&auto=format&fit=crop');
-      background-size: cover; background-position: center;
-    }
-
-    .glass { backdrop-filter: blur(12px); background: rgba(248, 250, 252, 0.95); }
-    
-    .btn-premium {
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .btn-premium:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.3);
-    }
-
-    #mobile-menu { transition: 0.3s ease-in-out; transform-origin: top; }
-
-    /* TRANSITIONS (SCROLL REVEAL) */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .delay-100 { transition-delay: 100ms; }
-    .delay-200 { transition-delay: 200ms; }
-    .delay-300 { transition-delay: 300ms; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
   </style>
 </head>
-<body>
+<body class="bg-janderson-bg text-white font-sans antialiased selection:bg-janderson-brand selection:text-white">
 
-  <header class="fixed top-0 w-full z-50 glass border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-      <div class="text-2xl tracking-tighter text-fitness-dark font-extrabold uppercase">
-        Lucas Gomes <span class="text-fitness-accent text-xs block tracking-widest font-bold -mt-1">Hipertrofia & Emagrecimento</span>
+  <header class="fixed top-0 w-full z-50 bg-janderson-bg/90 backdrop-blur-md border-b border-gray-800/60">
+    <div class="max-w-7xl mx-auto px-6 sm:px-12 h-24 flex items-center justify-between">
+      <div class="text-xl sm:text-2xl font-extrabold uppercase tracking-tight">
+        Janderson Pinheiro <span class="text-janderson-brand text-xs sm:text-sm block font-semibold tracking-wider normal-case">Consultoria Nutricional Avançada</span>
       </div>
-
-      <nav class="hidden lg:flex items-center gap-10">
-        <a href="#metodo" class="text-sm font-bold tracking-wide text-slate-500 hover:text-fitness-accent uppercase transition">O Método</a>
-        <a href="#pilares" class="text-sm font-bold tracking-wide text-slate-500 hover:text-fitness-accent uppercase transition">Metodologia</a>
-        <a href="#sobre" class="text-sm font-bold tracking-wide text-slate-500 hover:text-fitness-accent uppercase transition">O Coach</a>
-        <a href="https://api.whatsapp.com/send/?phone=5517997858003&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="btn-premium bg-fitness-dark text-white px-7 py-3 rounded-md text-xs font-bold tracking-widest uppercase hover:bg-fitness-accent transition">
-          Vagas Limitadas
-        </a>
-      </nav>
-
-      <button id="menu-toggle" class="lg:hidden text-fitness-dark"><i data-lucide="menu" class="w-7 h-7"></i></button>
-    </div>
-
-    <div id="mobile-menu" class="hidden absolute top-24 left-0 w-full bg-white border-b border-slate-200 flex-col p-8 gap-5 lg:hidden shadow-xl">
-      <a href="#metodo" class="mobile-link text-lg font-bold uppercase py-1 text-fitness-dark">O Método</a>
-      <a href="#pilares" class="mobile-link text-lg font-bold uppercase py-1 text-fitness-dark">Metodologia</a>
-      <a href="#sobre" class="mobile-link text-lg font-bold uppercase py-1 text-fitness-dark">O Coach</a>
-      <a href="https://api.whatsapp.com/send/?phone=5517997858003&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="bg-fitness-accent text-white py-4 rounded-md text-center font-extrabold tracking-wider uppercase text-sm">Vagas Limitadas</a>
+      <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="bg-janderson-brand hover:bg-janderson-brandHover text-white text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded transition-all duration-300 transform hover:scale-105 active:scale-95">
+        Vagas Limitadas
+      </a>
     </div>
   </header>
 
-  <section class="hero-bg min-h-screen flex items-center pt-28">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 items-center gap-12 py-12">
-      <div class="lg:col-span-9 reveal">
-        <span class="inline-flex items-center gap-2 bg-fitness-accent text-white px-5 py-2 rounded-md font-bold text-xs uppercase tracking-widest mb-8">
-          <i data-lucide="heart-pulse" class="w-4 h-4 text-white"></i> Mudando vidas com saúde — CREF 099391-G/SP
-        </span>
-        <h1 class="text-5xl lg:text-7xl leading-[1.1] text-white mb-6 font-extrabold tracking-tighter uppercase">
-          Construa massa magra e <span class="text-fitness-accent">defina o seu corpo.</span>
-        </h1>
-        <p class="text-lg text-slate-300 mb-12 leading-relaxed max-w-3xl font-medium">
-          Chega de treinos genéricos e fichas prontas que não saem do lugar. Você precisa de um planejamento estratégico desenhado milimetricamente para o seu biotipo e rotina. Conquiste resultados reais em hipertrofia e emagrecimento com um método validado.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-5">
-          <a href="https://api.whatsapp.com/send/?phone=5517997858003&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="btn-premium bg-fitness-accent text-white px-10 py-5 rounded-md font-extrabold text-center text-sm tracking-widest uppercase shadow-lg shadow-fitness-accent/30 hover:bg-fitness-accentHover">
-            Quero Minha Consultoria Exclusiva
-          </a>
-        </div>
+  <section class="pt-48 pb-24 px-6 max-w-6xl mx-auto text-center min-h-[95vh] flex flex-col justify-center items-center">
+    <div class="reveal active w-full max-w-4xl">
+      <span class="inline-block bg-janderson-brand/10 text-janderson-brand border border-janderson-brand/20 text-xs sm:text-sm font-bold uppercase tracking-widest px-5 py-2 rounded-full mb-8 animate-pulse">
+        Destrave sua Definição Muscular
+      </span>
+      
+      <h1 class="text-4xl sm:text-7xl font-extrabold uppercase tracking-tighter leading-tight sm:leading-none mb-8">
+        Seu shape já está aí. Só está <span class="text-janderson-brand block sm:inline">escondido embaixo da gordura.</span>
+      </h1>
+      
+      <p class="text-gray-400 text-lg sm:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
+        Chega de fazer dietas restritivas que destroem a sua massa muscular. Descubra a estratégia nutricional certa para <strong class="text-gray-200 font-semibold">eliminar a capa de gordura</strong> e revelar a definição que o seu treino já construiu.
+      </p>
+      
+      <div class="mb-16">
+        <a href="https://api.whatsapp.com/send/?phone=5584986018903&text=Ol%C3%A1%20Janderson!%20Quero%20destravar%20meu%20shape%20com%20a%20sua%20Consultoria%20Nutricional." target="_blank" class="inline-flex items-center gap-4 bg-janderson-brand hover:bg-janderson-brandHover text-white font-bold uppercase text-sm sm:text-base tracking-widest px-10 py-5 rounded-md shadow-2xl shadow-janderson-brand/30 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-janderson-brand/40">
+          <i data-lucide="apple" class="w-6 h-6"></i> Destravar Meu Shape Agora
+        </a>
       </div>
+
+      <div class="relative inline-block">
+        <div class="absolute inset-0 bg-janderson-brand/10 rounded-full blur-2xl pointer-events-none"></div>
+        <img 
+          src="janderson-pinheiro.webp" 
+          alt="Janderson Pinheiro - Nutricionista" 
+          class="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-janderson-brand/30 shadow-2xl shadow-janderson-brand/20 transition-transform duration-500 hover:scale-105"
+        />
+      </div>
+
     </div>
   </section>
-
-  <section class="py-28 bg-white border-t border-slate-100" id="metodo">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-3xl mx-auto text-center mb-20 reveal">
-        <h2 class="text-4xl lg:text-5xl font-extrabold text-fitness-dark mb-5 tracking-tight uppercase">Por que você ainda não mudou de shape?</h2>
-        <p class="text-slate-500 font-medium text-lg">Ir para a academia sem um norte claro faz você queimar cartucho e perder tempo. Para transformar o formato do seu corpo, cada série e repetição deve ter um propósito exato.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-10 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:border-fitness-accent/50 transition duration-300 reveal delay-100">
-          <div class="w-14 h-14 bg-fitness-dark text-fitness-accent rounded-lg flex items-center justify-center mb-8 shadow-md"><i data-lucide="trending-up" class="w-7 h-7"></i></div>
-          <h3 class="text-2xl font-bold mb-4 text-fitness-dark uppercase tracking-tight">Falta de Evolução de Carga</h3>
-          <p class="text-slate-600 font-medium leading-relaxed text-sm">Fazer os mesmos exercícios com as mesmas cargas estabiliza o corpo. Sem um ajuste inteligente nas variáveis mecânicas, o ganho de massa e a definição simplesmente estagnam.</p>
-        </div>
-        <div class="p-10 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:border-fitness-accent/50 transition duration-300 reveal delay-200">
-          <div class="w-14 h-14 bg-fitness-dark text-fitness-accent rounded-lg flex items-center justify-center mb-8 shadow-md"><i data-lucide="timer" class="w-7 h-7"></i></div>
-          <h3 class="text-2xl font-bold mb-4 text-fitness-dark uppercase tracking-tight">Volume sem Intensidade</h3>
-          <p class="text-slate-600 font-medium leading-relaxed text-sm">Passar horas na sala de musculação gera cansaço, não necessariamente resultado estético. O estímulo correto e focado gera o dobro de mudança na metade do tempo.</p>
-        </div>
-        <div class="p-10 rounded-xl bg-slate-50 border border-slate-200 shadow-sm hover:border-fitness-accent/50 transition duration-300 reveal delay-300">
-          <div class="w-14 h-14 bg-fitness-dark text-fitness-accent rounded-lg flex items-center justify-center mb-8 shadow-md"><i data-lucide="compass" class="w-7 h-7"></i></div>
-          <h3 class="text-2xl font-bold mb-4 text-fitness-dark uppercase tracking-tight">Zero Estruturação</h3>
-          <p class="text-slate-600 font-medium leading-relaxed text-sm">Treinar sem entender as divisões ideais para sua rotina quebra a consistência. O planejamento correto se encaixa no seu dia para você nunca mais deixar de treinar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-28 bg-slate-50 border-t border-b border-slate-200" id="pilares">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="max-w-3xl mx-auto text-center mb-20 reveal">
-        <span class="text-xs uppercase font-extrabold tracking-widest text-white bg-fitness-accent px-4 py-1 rounded-full">Metodologia Exclusiva</span>
-        <h2 class="text-4xl lg:text-5xl font-extrabold text-fitness-dark mt-6 tracking-tight uppercase">Pilares de Resultado</h2>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 text-center hover:-translate-y-1 transition-transform reveal delay-100">
-          <i data-lucide="award" class="w-10 h-10 text-fitness-accent mx-auto mb-5"></i>
-          <h3 class="text-xl font-bold text-fitness-dark mb-2 uppercase">Hipertrofia Máxima</h3>
-          <p class="text-slate-500 text-xs font-medium leading-relaxed">Ganho simétrico e estético de massa muscular com foco em densidade profunda.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 text-center hover:-translate-y-1 transition-transform reveal delay-200">
-          <i data-lucide="flame" class="w-10 h-10 text-fitness-accent mx-auto mb-5"></i>
-          <h3 class="text-xl font-bold text-fitness-dark mb-2 uppercase">Emagrecimento</h3>
-          <p class="text-slate-500 text-xs font-medium leading-relaxed">Queima calórica acelerada mantendo o tônus e a massa muscular que você conquistou.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 text-center hover:-translate-y-1 transition-transform reveal delay-300">
-          <i data-lucide="sliders" class="w-10 h-10 text-fitness-accent mx-auto mb-5"></i>
-          <h3 class="text-xl font-bold text-fitness-dark mb-2 uppercase">Treino sob Medida</h3>
-          <p class="text-slate-500 text-xs font-medium leading-relaxed">Ajustado especificamente para a quantidade de dias que você consegue ir treinar.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm border border-slate-200 text-center hover:-translate-y-1 transition-transform reveal delay-100">
-          <i data-lucide="smartphone" class="w-10 h-10 text-fitness-accent mx-auto mb-5"></i>
-          <h3 class="text-xl font-bold text-fitness-dark mb-2 uppercase">Suporte On-line</h3>
-          <p class="text-slate-500 text-xs font-medium leading-relaxed">Acompanhamento contínuo via aplicativo para você nunca executar exercícios com dúvidas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-28 bg-white" id="sobre">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-center">
-      <div class="lg:col-span-5 relative reveal">
-        <div class="absolute -inset-4 bg-fitness-accent rounded-xl -z-10 transform translate-x-2 translate-y-2"></div>
-        <img src="img/lucas.jpg" alt="Lucas Gomes" class="rounded-xl w-full aspect-[4/5] object-cover shadow-xl bg-slate-200 grayscale hover:grayscale-0 transition duration-500"
-             onerror="this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop';">
-      </div>
-      <div class="lg:col-span-7 reveal delay-200">
-        <span class="text-xs uppercase font-extrabold tracking-widest text-slate-400 block mb-2">Seu Coach</span>
-        <h2 class="text-4xl lg:text-5xl font-extrabold mb-8 text-fitness-dark uppercase tracking-tighter">Lucas Gomes</h2>
-        <div class="space-y-6 text-slate-600 text-base font-medium leading-relaxed">
-          <p>O meu compromisso como profissional é simples e focado: <strong class="text-fitness-dark">mudar vidas através da saúde e do exercício bem estruturado</strong>. Sou especialista em hipertrofia e emagrecimento, desenvolvendo planejamentos eficientes que geram resultados visíveis de verdade.</p>
-          <p>Esqueça metodologias complicadas ou treinos monótonos. Com a minha estrutura de consultoria on-line, eu te entrego o caminho exato do que fazer para transformar o formato e a estética do seu corpo. Chegou a hora de treinar com estratégia profissional e atingir o seu ápice físico.</p>
-          
-          <div class="grid sm:grid-cols-2 gap-4 pt-6 text-sm text-fitness-dark font-bold uppercase">
-            <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-fitness-accent w-6 h-6"></i><span>Especialista Registrado (CREF)</span></div>
-            <div class="flex items-center gap-3"><i data-lucide="target" class="text-fitness-accent w-6 h-6"></i><span>Consultoria Focada em Shape</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-28 bg-fitness-dark text-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-    <div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal">
-      <h2 class="text-4xl lg:text-6xl font-extrabold mb-6 uppercase tracking-tighter">Preparado para mudar de nível?</h2>
-      <p class="text-slate-400 text-lg lg:text-xl mb-12 font-medium max-w-2xl mx-auto leading-relaxed">Para manter a alta qualidade do suporte e do acompanhamento, as vagas abrem em lotes estritos. Garanta a sua agora.</p>
-      <a href="https://api.whatsapp.com/send/?phone=5517997858003&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-fitness-accent text-white px-12 py-5 rounded-md font-extrabold text-sm tracking-widest uppercase hover:bg-fitness-accentHover shadow-xl shadow-fitness-accent/20">
-        <i data-lucide="dumbbell" class="w-5 h-5"></i> Iniciar Minha Evolução
-      </a>
-    </div>
-  </section>
-
-  <footer class="py-12 bg-slate-50 border-t border-slate-200 text-center text-slate-400 text-xs font-bold tracking-wider uppercase">
-    <p>© 2026 Lucas Gomes — Todos os direitos reservados.</p>
-  </footer>
 
   <script>
     lucide.createIcons();
     
-    // Mobile Menu Logic
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      mobileMenu.classList.toggle('flex');
-    });
-
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { 
+        if(e.isIntersecting) { 
+          e.target.classList.add('active'); 
+          observer.unobserve(e.target); 
+        } 
       });
-    });
-
-    // Scroll Reveal Animation Logic
-    const revealElements = document.querySelectorAll('.reveal');
-
-    const revealOptions = {
-      threshold: 0.15,
-      rootMargin: "0px 0px -50px 0px"
-    };
-
-    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, revealOptions);
-
-    revealElements.forEach(el => {
-      revealOnScroll.observe(el);
-    });
+    }, { threshold: 0.05 });
+    
+    reveals.forEach(r => observer.observe(r));
   </script>
 </body>
 </html>
